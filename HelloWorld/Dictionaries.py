@@ -8,6 +8,7 @@ customer = { # Objects in JavaScript. Must be unique
 print(customer["name"])
 # John Smith
 
+
 numbers = {
     "1": "one",
     "2": "two",
