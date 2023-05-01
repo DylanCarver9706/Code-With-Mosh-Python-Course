@@ -9,19 +9,20 @@ print(customer["name"])
 # John Smith
 
 numbers = {
-    "1": 1,
-    "2": 2,
-    "3": 3,
-    "4": 4,
-    "5": 5,
-    "6": 6,
-    "7": 7,
-    "8": 8,
-    "9": 9
+    "1": "one",
+    "2": "two",
+    "3": "three",
+    "4": "four",
+    "5": "five",
+    "6": "six",
+    "7": "seven",
+    "8": "eight",
+    "9": "nine"
 }
 
 input = input("Phone #: ")
-print(input)
-
-if input in numbers:
-    print(numbers[input])
+# print(numbers["1"])
+output = ""
+for map in input:
+    output += numbers.get(map, "Not a number") + " " # .get works the same as numbers[{key}]
+print(output)
