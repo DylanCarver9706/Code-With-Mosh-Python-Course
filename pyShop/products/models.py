@@ -5,4 +5,10 @@ class Product(models.Model):
     name = models.CharField(max_length=255)
     price = models.FloatField()
     stock = models.IntegerField()
-    image = models.ImageField(max_length=2083)
+    image = models.CharField(max_length=2083)
+
+
+class Offer(models.Model):
+    code = models.CharField(max_length=255)
+    description = models.CharField(max_length=255)
+    discount = models.FloatField()
